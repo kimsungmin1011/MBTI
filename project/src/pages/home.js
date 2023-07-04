@@ -82,7 +82,7 @@ const styles = {
         padding: '10px',
         borderRadius: '5px',
         color: '#fff',
-        backgroundColor: '#ffa500',
+        backgroundColor: '#ff6200',
     },
     confirmButton: {
         padding: '10px 20px',

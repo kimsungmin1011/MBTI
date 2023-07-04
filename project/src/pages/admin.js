@@ -8,7 +8,7 @@ function Admin() {
     const navigate = useNavigate();
 
     const postMbti = () => {
-        axios.post(`http://localhost:8080/mbti/${curMbti}`, { info: curInfo })
+        axios.post('http://localhost:8080/mbti/', { mbti: curMbti, info: curInfo })
             .then(res => {
                 console.log(res)
                 alert("MBTI 업데이트 성공! 홈으로 이동합니다"); // 요청이 성공하면 alert창 표시

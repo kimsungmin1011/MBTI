@@ -11,7 +11,7 @@ function Result() {
         axios.get(`http://localhost:8080/mbti/${curMbti}`)
             .then(res => {
                 console.log(res)
-                setWhat(res.curMbti.info[0])
+                setWhat(res.data[0].info)
             }).catch(err => {
                 console.log(err)
             })
